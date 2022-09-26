@@ -18,13 +18,6 @@ $(function () {
         $('#abstrat').val('');
         $('#content').val('');
     });
-     // 粘贴监听 可以在此处增加版权信息外链链接等
-    // document.addEventListener("paste", function (e) {  // 粘贴事件触发
-    //     navigator.clipboard.readText().then(
-    //         clipText => {
-    //             document.querySelector("#content").innerText = clipText
-    //         });;
-    // }, false);
     // 发布文章
     $('#post').on('click', function () {
         let req_time = new Date().getTime();
