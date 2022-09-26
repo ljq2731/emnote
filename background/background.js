@@ -14,6 +14,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     chrome.storage.local.get(['markdown'], function (result) {
       sendResponse(result.markdown);
       });
+      return true;
   }
 });
 
